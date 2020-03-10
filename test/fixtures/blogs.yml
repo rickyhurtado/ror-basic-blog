@@ -1,13 +1,11 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+sports:
+  name: Sports
+  privacy: public
 
-one:
-  user: one
-  post: one
-  name: MyString
-  privacy: MyString
+nutrition:
+  name: Nutrition
+  privacy: public
 
-two:
-  user: two
-  post: two
-  name: MyString
-  privacy: MyString
+private:
+  name: Private
+  privacy: private

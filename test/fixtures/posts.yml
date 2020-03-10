@@ -1,13 +1,43 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  user: one
-  blog: one
-  title: MyString
-  body: MyText
+sports_post_1:
+  user: sports_admin
+  blog: sports
+  title: Sports Post 1
+  body: Body content about sports 1
 
-two:
-  user: two
-  blog: two
-  title: MyString
-  body: MyText
+sports_post_2:
+  user: sports_editor
+  blog: sports
+  title: Sports Post 2
+  body: Body content about sports 2
+
+sports_post_3:
+  user: sports_editor
+  blog: sports
+  title: Sports Post 3
+  body: Body content about sports 3
+
+nutrition_post_1:
+  user: nutrition_admin
+  blog: nutrition
+  title: Nutrition Post 1
+  body: Body content about nutrition 1
+
+nutrition_post_2:
+  user: nutrition_admin
+  blog: nutrition
+  title: Nutrition Post 2
+  body: Body content about nutrition 2
+
+nutrition_post_3:
+  user: nutrition_editor
+  blog: nutrition
+  title: Nutrition Post 3
+  body: Body content about nutrition 3
+
+private_post:
+  user: private_admin
+  blog: private
+  title: Private Post
+  body: Body content about private

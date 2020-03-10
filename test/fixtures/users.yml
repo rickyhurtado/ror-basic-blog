@@ -1,9 +1,39 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+sports_admin:
+  firstname: Sports
+  lastname: Admin
+  role: admin
+  blog: sports
+  email: sports_admin@example.com
+  encrypted_password: <%= User.new.send(:password_digest, 'p4ssw0rd') %>
 
-one:
-  firstname: MyString
-  lastname: MyString
+sports_editor:
+  firstname: Sports
+  lastname: Editor
+  role: editor
+  blog: sports
+  email: sports_editor@example.com
+  encrypted_password: <%= User.new.send(:password_digest, 'p4ssw0rd') %>
 
-two:
-  firstname: MyString
-  lastname: MyString
+nutrition_admin:
+  firstname: Nutrition
+  lastname: Admin
+  role: admin
+  blog: nutrition
+  email: nutrition_admin@example.com
+  encrypted_password: <%= User.new.send(:password_digest, 'p4ssw0rd') %>
+
+nutrition_editor:
+  firstname: Nutrition
+  lastname: Editor
+  role: editor
+  blog: nutrition
+  email: nutrition_ediitor@example.com
+  encrypted_password: <%= User.new.send(:password_digest, 'p4ssw0rd') %>
+
+private_admin:
+  firstname: Private
+  lastname: Admin
+  role: admin
+  blog: private
+  email: private_admin@example.com
+  encrypted_password: <%= User.new.send(:password_digest, 'p4ssw0rd') %>

@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  ROLED_ADMIN = 'admin'
+  ROLE_EDITOR = 'editor'
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable
@@ -8,4 +11,12 @@ class User < ApplicationRecord
 
   belongs_to :blog
   has_many :posts
+
+  def is_admin?
+    self.role.eql?(ROLE_ADMIN)
+  end
+
+  def is_editor?
+    [ROLE_ADMIN, ROLE_EDITOR].include?(self.role)
+  end
 end
