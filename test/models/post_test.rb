@@ -40,4 +40,10 @@ class PostTest < ActiveSupport::TestCase
   test '.all_private' do
     assert_equal(Post.all_private.count, 1)
   end
+
+  test '.all_public_posts_by_blog' do
+    assert_equal(Post.all_public_posts_by_blog(@sports_blog.id).count, 3)
+    assert_equal(Post.all_public_posts_by_blog(@nutrition_blog.id).count, 3)
+    assert_equal(Post.all_public_posts_by_blog(@private_blog.id).count, 0)
+  end
 end

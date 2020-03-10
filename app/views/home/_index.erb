@@ -1,0 +1,15 @@
+<% posts.each do |post| %>
+  <hr />
+
+  <div>
+    <h3>
+      <%= post.title %><br />
+      <small>
+        by <%= post.user.firstname %> <%= post.user.lastname %>
+        in <a href="<%= posts_by_blog_path(post.blog_id) %>"><%= post.blog.name %></a>
+      </small>
+    </h3>
+
+    <p><%= truncate(post.body, length: 300, separator: ' ') %> <a href="<%= post_path(post) %>">Read more</a></p>
+  </div>
+<% end %>

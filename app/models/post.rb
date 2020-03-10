@@ -13,6 +13,11 @@ class Post < ApplicationRecord
     self.joins_blogs(PRIVACY_PRIVATE)
   end
 
+  def self.all_public_posts_by_blog(blog_id)
+    self.joins(:blog).where(['blogs.privacy="', PRIVACY_PUBLIC, '"'].join)
+                     .where('blog_id="?"', blog_id)
+  end
+
   private
 
   def self.joins_blogs(privacy)
