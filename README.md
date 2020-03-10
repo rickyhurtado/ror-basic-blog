@@ -1,24 +1,30 @@
-# README
+# Rails Basic Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby Version
+2.6.5
 
-Things you may want to cover:
+## Rails Version
+6.0.2.1
 
-* Ruby version
+## Setup
 
-* System dependencies
+* Clone project
+* run `bundle`
+* run `rake db:migrate db:seed`
+* run `rails test`
 
-* Configuration
+## Completed Features
 
-* Database creation
+* Display public posts
+* Display public posts by blog
+* Display a post
 
-* Database initialization
+## Controller and Model Tests Coverage
 
-* How to run the test suite
+* Blogs
+* Users
+* Posts
 
-* Services (job queues, cache servers, search engines, etc.)
+## Development Approach
 
-* Deployment instructions
-
-* ...
+Test Driven Development (TDD)
