@@ -10,11 +10,11 @@ class UserTest < ActiveSupport::TestCase
     @private_admin = users(:private_admin)
   end
 
-  test 'scope: belongs_to blog' do
+  test 'belongs_to blog' do
     assert_equal(@sports_admin.blog.name, @sports_blog.name)
   end
 
-  test 'scope: has_many :posts' do
+  test 'has_many :posts' do
     assert_equal(@sports_admin.posts.count, 1)
     assert_equal(@sports_editor.posts.count, 2)
     assert_equal(@nutrition_admin.posts.count, 2)

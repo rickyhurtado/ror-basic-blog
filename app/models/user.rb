@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  ROLED_ADMIN = 'admin'
+  ROLE_ADMIN = 'admin'
   ROLE_EDITOR = 'editor'
 
   # Include default devise modules. Others available are:
