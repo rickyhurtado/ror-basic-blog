@@ -32,4 +32,12 @@ class PostTest < ActiveSupport::TestCase
     assert_equal(@nutrition_post_3.blog, @nutrition_blog)
     assert_equal(@private_post.blog, @private_blog)
   end
+
+  test '.all_public' do
+    assert_equal(Post.all_public.count, 6)
+  end
+
+  test '.all_private' do
+    assert_equal(Post.all_private.count, 1)
+  end
 end
